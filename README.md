@@ -1,7 +1,6 @@
 # 🚛 APEX Fleet AI — Autonomous Telematics & Bi-Directional LLM Dispatch Platform
 
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-ONLINE-10b981?style=for-the-badge&logo=bolt&logoColor=white)](https://ai-autonomous-truck-r7gn.bolt.host)
-[![Hackathon Achievement](https://img.shields.io/badge/Competition-Taibah_Thon_2026-6366f1?style=for-the-badge)](#)
 [![Frontend](https://img.shields.io/badge/Frontend-React_%7C_Tailwind_CSS-38bdf8?style=for-the-badge&logo=react&logoColor=white)](#)
 [![Geospatial](https://img.shields.io/badge/Mapping-Leaflet.js_%7C_Carto_Dark-10b981?style=for-the-badge&logo=leaflet&logoColor=white)](#)
 [![AI Engine](https://img.shields.io/badge/AI_Core-Llama_3_%7C_Tool_Calling-8b5cf6?style=for-the-badge)](#)
