@@ -27,3 +27,57 @@ Unlike static dashboard mockups, this system implements a **closed-loop physics 
 ---
 
 ## 🏗️ System Architecture
+
++-------------------------------------------------------------------------+
+|                   PRESENTATION LAYER (Mobile & Web)                     |
+|  - Real-Time Dark Geospatial Map (Polyline Routes & Heading Vectors)    |
+|  - Live Telemetry HUD (Speed, RPM, Fuel SoC, Coolant Temp, Safety KPI)  |
+|  - 2-Way AI Dispatch Radio + Chaos/Fault Injection Controls             |
++------------------------------------+------------------------------------+
+| Event Loop / WebSockets (10Hz)
+v
++-------------------------------------------------------------------------+
+|                STOCHASTIC SIMULATION & COGNITIVE CORE                   |
+|  - Kinematic Loop: Longitudinal Accel, AMT Gear/RPM & Thermal Drift     |
+|  - AI Agent Router: Persona Context Hydrator + JSON Tool Execution      |
+|  - Spontaneous Hazard Generator: Unscripted Traffic & Weather Events    |
++-------------------------------------------------------------------------+
+
+
+---
+
+## 🛠️ Tech Stack Matrix
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend Framework** | React 18, TypeScript, Tailwind CSS |
+| **Geospatial Engine** | Leaflet.js, Carto Dark Matter Tiles, Custom SVG Heading Markers |
+| **UI Components** | Lucide Icons, Custom Animated Radial Gauges, Responsive HUD Drawer |
+| **AI Cognitive Bridge** | Natural Language Processing / LLM Tool Calling (English & Saudi Arabic) |
+| **Deployment Platform** | Cloud PWA Infrastructure ([Bolt.host](https://ai-autonomous-truck-r7gn.bolt.host)) |
+
+---
+
+## 🚀 Getting Started
+
+### Live Demo (No Installation Required)
+Access the fully functioning cloud deployment directly in your desktop or mobile browser:  
+👉 **[Launch Naqil AI Platform](https://ai-autonomous-truck-r7gn.bolt.host)**
+
+### Local Setup
+```bash
+# 1. Clone this repository
+git clone [https://github.com/YOUR_USERNAME/naqil-ai-telematics.git](https://github.com/YOUR_USERNAME/naqil-ai-telematics.git)
+cd naqil-ai-telematics
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+```
+👨‍💻 Project Lead
+
+Muath Makhlouf
+
+Autonomous Systems, Full-Stack Telematics & AI Automation
