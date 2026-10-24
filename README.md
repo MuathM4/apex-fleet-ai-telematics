@@ -1,7 +1,6 @@
 # 🚛 Naqil AI (ناقل الذكي) — Autonomous Fleet Telematics & Driver Copilot
 
 [![Live Demo](https://img.shields.io/badge/LIVE_PLATFORM-ONLINE-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-autonomous-truck-r7gn.bolt.host)
-[![Hackathon Project](https://img.shields.io/badge/Competition-Taibah_Thon_2026-6366f1?style=for-the-badge)](#)
 [![Stack](https://img.shields.io/badge/Frontend-React_%7C_Tailwind_%7C_Leaflet-38bdf8?style=for-the-badge&logo=react&logoColor=white)](#)
 [![AI Engine](https://img.shields.io/badge/Cognitive_Core-Bi--Directional_LLM_Dispatcher-8b5cf6?style=for-the-badge)](#)
 
@@ -13,7 +12,7 @@
 
 **Naqil AI** is an intelligent telematics dispatch platform and autonomous driver copilot engineered to modernize freight logistics for commercial fleets and independent truck drivers (*الأفراد*) across Saudi Arabia's primary freight corridors (Madinah, Jeddah Islamic Port, Yanbu, Riyadh, and Dammam).
 
-Developed as an innovative competition solution for **Taibah Thon**, the platform directly aligns with the objectives of the **Saudi Vision 2030 National Transport and Logistics Strategy**:
+Developing the platform directly aligns with the objectives of the **Saudi Vision 2030 National Transport and Logistics Strategy**:
 1. **Eliminating Deadheading:** Helping drivers secure profitable return-leg loads (*رجوع*) to cut empty miles and highway carbon emissions.
 2. **Heavy-Vehicle Dynamic Safety:** Providing real-time telemetry monitoring, steep mountain pass elevation warnings (e.g., Aqabat routes), and simulated J1939 fault response protocols.
 3. **Bilingual AI Voice/Text Dispatch:** An in-cab conversational copilot operating in Saudi Arabic and English that turns human dispatch directives into real-time vehicle kinematics modifications.
@@ -96,5 +95,3 @@ npm run dev
 Muath Makhlouf
 
 Autonomous Systems, Full-Stack Telematics & AI Automation
-
-Developed for Taibah Thon 2026
