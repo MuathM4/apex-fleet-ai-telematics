@@ -1,97 +1,30 @@
-# 🚛 Naqil AI (ناقل الذكي) — Autonomous Fleet Telematics & Driver Copilot
+# 🚛 APEX Fleet AI — Autonomous Telematics & Bi-Directional LLM Dispatch Platform
 
-[![Live Demo](https://img.shields.io/badge/LIVE_PLATFORM-ONLINE-10b981?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-autonomous-truck-r7gn.bolt.host)
-[![Stack](https://img.shields.io/badge/Frontend-React_%7C_Tailwind_%7C_Leaflet-38bdf8?style=for-the-badge&logo=react&logoColor=white)](#)
-[![AI Engine](https://img.shields.io/badge/Cognitive_Core-Bi--Directional_LLM_Dispatcher-8b5cf6?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-ONLINE-10b981?style=for-the-badge&logo=bolt&logoColor=white)](https://ai-autonomous-truck-r7gn.bolt.host)
+[![Hackathon Achievement](https://img.shields.io/badge/Competition-Taibah_Thon_2026-6366f1?style=for-the-badge)](#)
+[![Frontend](https://img.shields.io/badge/Frontend-React_%7C_Tailwind_CSS-38bdf8?style=for-the-badge&logo=react&logoColor=white)](#)
+[![Geospatial](https://img.shields.io/badge/Mapping-Leaflet.js_%7C_Carto_Dark-10b981?style=for-the-badge&logo=leaflet&logoColor=white)](#)
+[![AI Engine](https://img.shields.io/badge/AI_Core-Llama_3_%7C_Tool_Calling-8b5cf6?style=for-the-badge)](#)
 
-> **Live Application URL:** **[https://ai-autonomous-truck-r7gn.bolt.host](https://ai-autonomous-truck-r7gn.bolt.host)**
-
----
-
-## 🏆 Project Overview & Vision
-
-**Naqil AI** is an intelligent telematics dispatch platform and autonomous driver copilot engineered to modernize freight logistics for commercial fleets and independent truck drivers (*الأفراد*) across Saudi Arabia's primary freight corridors (Madinah, Jeddah Islamic Port, Yanbu, Riyadh, and Dammam).
-
-Developing the platform directly aligns with the objectives of the **Saudi Vision 2030 National Transport and Logistics Strategy**:
-1. **Eliminating Deadheading:** Helping drivers secure profitable return-leg loads (*رجوع*) to cut empty miles and highway carbon emissions.
-2. **Heavy-Vehicle Dynamic Safety:** Providing real-time telemetry monitoring, steep mountain pass elevation warnings (e.g., Aqabat routes), and simulated J1939 fault response protocols.
-3. **Bilingual AI Voice/Text Dispatch:** An in-cab conversational copilot operating in Saudi Arabic and English that turns human dispatch directives into real-time vehicle kinematics modifications.
+> **Live Deployment:** **[Launch APEX Fleet AI Command Console](https://ai-autonomous-truck-r7gn.bolt.host)**
 
 ---
 
-## 🌟 Key Features
+## 🏆 Project Overview & Engineering Achievement
 
-### 1. 🗺️ Heavy Freight Map & Route Telematics
-- Interactive geospatial tracking showing vehicle progress along real Saudi highway corridors.
-- Route polylines with real-time ETA calculations, distance counters, and highway speed limit tracking.
-- Heavy-vehicle route optimization factoring in truck curfews, weigh stations, and certified SASCO rest plazas.
+**APEX Fleet AI** is an end-to-end **Autonomous Commercial Fleet Simulation & Real-Time Telematics Command Platform**, developed as an innovation project for **Taibah Thon**. Designed to model next-generation freight logistics operations across primary Saudi Arabian transport corridors (Madinah Logistics Hub, Jeddah Islamic Port, Yanbu Industrial City, Riyadh Dry Port, and Dammam), the platform bridges **high-frequency vehicle telemetry** with **conversational AI agent dispatching** in alignment with the **Saudi Vision 2030 National Transport and Logistics Strategy**.
 
-### 2. 📊 Live Vehicle HUD ("The Metry")
-- Sub-second telemetry gauges: **Ground Speed ($\text{km/h}$)**, **Engine RPM**, **Automated Gear Selection**, **Fuel SoC / Burn Rate ($\text{L/h}$)**, and **Engine Coolant Temperature ($^\circ\text{C}$)**.
-- Driver safety scorecard and regulatory **Hours of Service (HOS)** fatigue monitoring.
+Unlike static dashboard mockups, this system implements a **closed-loop physics and cognitive architecture**: natural language commands issued by a human dispatcher (in English or Saudi Arabic) are parsed into structured tool calls that directly mutate the real-time kinematics, speed governors, and hierarchical state machines of moving trucks on the map.
 
-### 3. 💬 Bi-Directional AI Driver Copilot
-- Conversational dispatch bridge capable of understanding operational directives in Arabic (*"هدي السرعة إلى 60"* / *"وقف على جنب"*) and English.
-- Real-time physics mutation: Directives to pull over or change speeds dynamically alter the moving truck's speed and status indicators on the map.
+---
 
-### 4. ⚡ Fault & Drama Injection (Chaos Engineering)
-- Testable operational emergency modes:
-  - **🔥 Engine Overheat:** Simulates thermal coolant spikes ($115^\circ\text{C}$), triggers ECU limp mode ($35\text{ km/h}$), and radios a priority mayday.
-  - **🛑 Harsh Braking:** Simulates sudden hazard avoidance ($-7.4\text{ m/s}^2$ ABS deceleration).
-  - **⚡ Overspeed Violation:** Alerts the control room when a unit exceeds the legal corridor limit.
+## ✨ Key Architectural Achievements
+
+- **Stochastic Multi-Agent Physics Engine:** Simulates concurrent commercial semi-trucks with Gaussian throttle drift, 12-speed Automated Manual Transmission (AMT) gear/RPM synthesis, dynamic fuel burn rates ($\text{L/h}$), coolant thermodynamics, and Hours-of-Service (HOS) driver fatigue modeling.
+- **Unscripted World Event Injection:** Agents autonomously encounter and report stochastic highway hazards (sandstorm visibility drops, stray livestock, lane closures, and thermal creep) without human scripting.
+- **Closed-Loop AI Dispatch Radio (Tool Calling):** Bi-directional communication console powered by Llama-3 / Structured NLP. Dispatchers can negotiate with virtual drivers, request live ETA/telemetry readbacks, or issue operational directives (`SET_SPEED`, `PULL_OVER`, `RESUME_CRUISE`, `TAKE_DETOUR`) that physically alter vehicle telemetry in real time.
+- **Interactive Fault & "Drama" Injection:** Built-in chaos-engineering controls allow operators to inject J1939 engine overheat faults (`115°C` ECU limp mode), harsh air-brake events (`-7.4 m/s²`), and overspeed violations to test automated safety workflows.
 
 ---
 
 ## 🏗️ System Architecture
-
-+-------------------------------------------------------------------------+
-|                   PRESENTATION LAYER (Mobile & Web)                     |
-|  - Real-Time Dark Geospatial Map (Polyline Routes & Heading Vectors)    |
-|  - Live Telemetry HUD (Speed, RPM, Fuel SoC, Coolant Temp, Safety KPI)  |
-|  - 2-Way AI Dispatch Radio + Chaos/Fault Injection Controls             |
-+------------------------------------+------------------------------------+
-| Event Loop / WebSockets (10Hz)
-v
-+-------------------------------------------------------------------------+
-|                STOCHASTIC SIMULATION & COGNITIVE CORE                   |
-|  - Kinematic Loop: Longitudinal Accel, AMT Gear/RPM & Thermal Drift     |
-|  - AI Agent Router: Persona Context Hydrator + JSON Tool Execution      |
-|  - Spontaneous Hazard Generator: Unscripted Traffic & Weather Events    |
-+-------------------------------------------------------------------------+
-
-
----
-
-## 🛠️ Tech Stack Matrix
-
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend Framework** | React 18, TypeScript, Tailwind CSS |
-| **Geospatial Engine** | Leaflet.js, Carto Dark Matter Tiles, Custom SVG Heading Markers |
-| **UI Components** | Lucide Icons, Custom Animated Radial Gauges, Responsive HUD Drawer |
-| **AI Cognitive Bridge** | Natural Language Processing / LLM Tool Calling (English & Saudi Arabic) |
-| **Deployment Platform** | Cloud PWA Infrastructure ([Bolt.host](https://ai-autonomous-truck-r7gn.bolt.host)) |
-
----
-
-## 🚀 Getting Started
-
-### Live Demo (No Installation Required)
-Access the fully functioning cloud deployment directly in your desktop or mobile browser:  
-👉 **[Launch Naqil AI Platform](https://ai-autonomous-truck-r7gn.bolt.host)**
-
-### Local Setup
-```bash
-# 1. Clone this repository
-git clone [https://github.com/YOUR_USERNAME/naqil-ai-telematics.git](https://github.com/YOUR_USERNAME/naqil-ai-telematics.git)
-cd naqil-ai-telematics
-
-# 2. Install dependencies
-npm install
-
-# 3. Start development server
-npm run dev
-👨‍💻 Project Lead
-Muath Makhlouf
-
-Autonomous Systems, Full-Stack Telematics & AI Automation
